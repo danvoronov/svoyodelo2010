@@ -1,0 +1,86 @@
+.slidercont{
+	margin: 3px 15px 0;
+	width: 785px;
+	padding: 6px; background-color: #fff1f1;
+}
+.hrline{
+  border: 0;
+  width: 95%;  min-width: 95%;
+	color: lightgrey;
+	background-color: lightgrey;
+	height: 1px;
+}
+.bloki{
+		font-size: 20px;
+		padding: 15px; 
+			background-color: white;
+		margin: 1%; 		
+		width: 280px;
+		float: left;		
+				 -moz-border-radius: 14px; -webkit-border-radius: 14px; border-radius: 14px; 	
+				 			-webkit-box-shadow: 0 0 7px rgba(153, 153, 153, 0.8); -moz-box-shadow: 0 0 7px rgba(153, 153, 153, 0.8); box-shadow: 0 0 7px rgba(153, 153, 153, 0.8);
+}
+.bloki sup{
+	text-shadow: rgba(153, 153, 153, 0) 0 1px 1px;
+		font-size: 10px;	
+}
+.bloki1{ border: 2px solid #2a4977; background: #eff4ff;}
+.bloki2{ border: 2px solid #50c878; background: #f1ffff;}
+.bloki3{ border: 2px solid #C48793; background: #fae9f0;}
+.bloki4{ border: 2px solid #F88017; background: #fffcdf;}
+.blokimotiv{ border: 2px solid #d50505; background: #FFD7D6;}
+
+.blokniz {
+	clear: both;
+		font-size: 140%;
+		padding: 8px 10px 20px; 		
+		width: 86%;   
+		margin-left: 4%; 
+}
+
+.profvivod a {
+	color: red;
+}
+.nadtekst {
+	width: 400px;
+	font-size: 16pt;
+	position: absolute;
+	top: -27px;
+	left: -45px;
+	text-align: center;
+	z-index: 2; 	color: white;
+}
+
+#contentWrap{ 	margin: 30px; }
+
+.hidediv{display : none; height: 1px; width: 1px;}
+
+.cloud{
+	margin: 24px 10px;
+	text-align: center;
+}
+
+.postcitata{
+		border:1px solid lightgrey;
+		background-color:white;
+		margin: 15px 200px;
+		padding: 15px;
+		font-size: 16px;		
+}
+
+.clear { clear: both; }
+
+#profgramma_contiener h2 { margin: 10px 0; padding: 0;}
+#recom_dialog  p { margin: 20px 7px; padding: 0; font-size: 2em}
+
+.killmargins{
+	margin: 0 0 20px  0;
+	padding: 8px;
+}
+
+.graphic { text-align: center; }
+.graphic2 {	text-align: center; display: none; }
+
+/* облако тегов */
+
+a.size_8_0 {text-decoration: none; font-size: 2pt;  color:grey;} a.size_8_1 {text-decoration: none; font-size: 4.5pt;  color:grey;} a.size_8_2 {text-decoration: none; font-size: 7pt;  color:grey;} a.size_8_3 {text-decoration: none; font-size: 9.5pt;  color:grey;} a.size_8_4 {text-decoration: none; font-size: 12pt;  color:grey;} a.size_8_5 {text-decoration: none; font-size: 14.5pt;  color:black;} a.size_8_6 {text-decoration: none; font-size: 17pt;  color:black;} a.size_8_7 {text-decoration: none; font-size: 19.5pt;  color:black;} a.size_8_8 {text-decoration: none; font-size: 22pt;  color:black;} a.size_12_0 {text-decoration: none; font-size: 2pt; color:grey;} a.size_12_1 {text-decoration: none; font-size: 4.5pt; color:grey;} a.size_12_2 {text-decoration: none; font-size: 7pt; color:grey;} a.size_12_3 {text-decoration: none; font-size: 9.5pt; color:grey;} a.size_12_4 {text-decoration: none; font-size: 12pt; color:grey;} a.size_12_5 {text-decoration: none; font-size: 14.5pt; color:grey;} a.size_12_6 {text-decoration: none; font-size: 17pt; color:grey;} a.size_12_7 {text-decoration: none; font-size: 19.5pt; color:black;} a.size_12_8 {text-decoration: none; font-size: 22pt; color:black;} a.size_12_9 {text-decoration: none; font-size: 24.5pt; color:black;} a.size_12_10 {text-decoration: none; font-size: 27pt; color:black;} a.size_12_11 {text-decoration: none; font-size: 29.5pt; color:black;} a.size_12_12 {text-decoration: none; font-size: 32pt; color:black;} a.size_10_0 {text-decoration: none; font-size: 2pt; color:grey;} a.size_10_1 {text-decoration: none; font-size: 4.2pt; color:grey;} a.size_10_2 {text-decoration: none; font-size: 6.4pt; color:grey;} a.size_10_3 {text-decoration: none; font-size: 8.6pt; color:grey;} a.size_10_4 {text-decoration: none; font-size: 10.8pt; color:grey;} a.size_10_5 {text-decoration: none; font-size: 13pt; color:grey;} a.size_10_6 {text-decoration: none; font-size: 15.2pt; color:black;} a.size_10_7 {text-decoration: none; font-size: 17.4pt; color:black;} a.size_10_8 {text-decoration: none; font-size: 19.6pt; color:black;} a.size_10_9 {text-decoration: none; font-size: 21.8pt; color:black;} a.size_10_10 {text-decoration: none; font-size: 24pt; color:black;} a.size_6_0 {text-decoration: none; font-size: 6pt; color:grey;} a.size_6_1 {text-decoration: none; font-size: 8pt; color:grey;} a.size_6_2 {text-decoration: none; font-size: 10pt; color:grey;} a.size_6_3 {text-decoration: none; font-size: 12pt; color:grey;} a.size_6_4 {text-decoration: none; font-size: 15pt; color:black;} a.size_6_5 {text-decoration: none; font-size: 17pt; color:black;} a.size_6_6 {text-decoration: none; font-size: 19pt; color:black;}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.slidingpanel_tab {
+	background-color: #eee;
+	color: #aaa;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	cursor: pointer;
+	padding: 2px;
+}

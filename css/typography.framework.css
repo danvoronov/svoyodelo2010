@@ -1,0 +1,47 @@
+/*
+	CSS Typography library v0.1
+	Ludwig Pettersson
+*/
+
+
+/* # Base # */
+body { font-size: 62.5%; }
+
+h1 { font-size: 3em; padding: 0.45em 0 0.68em; font-weight: normal; }
+h2 { font-size: 2.6em; padding: 0.65em 0 0.68em; font-weight: normal; font-family: Helvetica, Arial, sans-serif; }
+
+h3 { font-size: 1.6em; padding: 0.65em 0; font-weight: normal; font-family: Helvetica, Arial, sans-serif; }
+h4 { font-size: 1.2em; padding: 1em 0; font-weight: bold; }
+	
+p { font-size: 1.3em; line-height: 1.5em; padding-bottom: 1.5em; }
+
+blockquote { margin: 2em 0; }
+blockquote p { font-size: 1.4em; line-height: 1.1em; }
+pre code { margin: 2em 0; }
+	
+ul,
+ol,
+dl { font-size: 1.2em; line-height: 1.5em; margin-bottom: 1.5em; }
+	ul li { list-style-type: disc; }
+	ol li { list-style-type: decimal; }
+		
+	ul ul { font-size: 1em; margin-bottom: 0; }
+		ul ul li { list-style-type: circle; }
+
+	dl dt { font-weight: bold; }
+		dl dd { margin-left: 1em; }
+		
+	ul blockquote { font-size: 0.85em; }
+	
+	dl { font-size: 1em; }
+	
+pre { line-height: 1.6em; font-size: 12px; margin-bottom: 1.9em; }
+table pre { margin-bottom: 0; }
+
+small { font-size: 90%; }
+
+/* # Default Styles # */
+body { font-family: sans-serif, verdana; }
+blockquote p,
+q { font-family: Georgia, serif; font-style: italic; }
+code { font-family: monospace; }

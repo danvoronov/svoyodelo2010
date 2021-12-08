@@ -1,0 +1,72 @@
+		<div id="edit-db" title="Редактор базы данных профессий">
+<form action ="" name="dform" id="dform" onsubmit="return false;">
+<span class="validateTips" style="margin-left: 28px;">Информация из базы данных:</span><input type="text"  disabled="disabled" id=message name=message style="border: 0; width: 320px; " class="dform" value="">
+	<fieldset class="ui-widget-content ui-corner-all">	
+		<div style="clear: both;" > </div>	
+		
+	<div style=" float: left; width: 130px; height: 30px; padding-left: 10px;" >
+ 	№ <input type="text" id="profid" name=profid  size=4 style="border:0; color:#bb3902; font-weight:bold;" value="" onchange="load4base(parseInt(document.getElementById('profid').value),0);" class="dform"><span id="errmsg"></span>	в базе. <a href='#' onClick='open_prgramma(document.getElementById("profid").value);'>Профессиограмма</a></div>	
+ <div style=" float: left; height: 38px;">
+	<span style="padding-left: 26px;"><button id="db-prev">&lt; Прев</button><button id="db-next">След &gt;</button>&nbsp;<button id="db-refresh">Обновить</button></span>
+</div>	
+ 	<div class="text ui-corner-all"  style=" float: left; width: 488px; padding: 4px 12px; margin-left: 35px; background-color: #addfad;" >Min уровень <b>здоровья</b>: 	<span id="radioZdo">
+			<input type="radio" class="dform" id="radio_1" name="zdorove" value=1 /><label for="radio_1">-3</label><input type="radio" class="dform" id="radio_2" name="zdorove" value=2  /><label for="radio_2">-2</label><input type="radio" class="dform" id="radio_3" name="zdorove" value=3  /><label for="radio_3">-1</label><input type="radio" class="dform" id="radio_4" name="zdorove" value=4  /><label for="radio_4">норма</label><input type="radio" class="dform" id="radio_5" name="zdorove" value=5  /><label for="radio_5">+1</label><input type="radio" class="dform" id="radio_6" name="zdorove" value=6  /><label for="radio_6">+2</label><input type="radio" class="dform" id="radio_7" name="zdorove" value=7  /><label for="radio_7">+3</label></span>
+</div>		<div style="clear: both;" > </div>
+
+<div><input type="text" id=profession name=profession style="border: 0; font-size:13pt; width:98%; height: 30px;padding-left: 15px; font-weight:bold;" class="dform" value="Название"></div> 
+
+<div  style=" float: left; width: 250px;">
+
+<div style=" float: left; height: 32px; padding: 7px 0 0 28px;" ><span id="radioPol">			<input type="radio" id="pol1" name="pol" value="0" class="dform" /><label for="pol1">женская</label>	<input type="radio" id="pol3" name="pol" value="2" class="dform" /><label for="pol3">уни</label>	<input type="radio" id="pol2" name="pol" value="1" class="dform" /><label for="pol2">мужская</label></span> 
+</div>	
+
+	<div style=" float: left; margin-left: 18px;">
+		<div><label for="pow_req">Min уровень <b style=" background-color: #e6e6fa;">Власть</b>:</label>
+		<input type="text" id="pow_req" name=pow_req class="dform" disabled size=1 style="border:0; color:#bb3902;  background-color: #e6e6fa; font-weight:bold;" />
+		<div id="sliderPow" style="width: 200px; margin-top: 4px;" ></div> </div>
+		
+		<div  style="margin-top: 8px;"><label for="aff_req">Min уровень <b style=" background-color: #e6e6fa;">Участие</b>:</label>
+		<input type="text" id="aff_req" name=aff_req class="dform" disabled size=1 style="border:0; color:#bb3902;  background-color: #e6e6fa; font-weight:bold;" />
+		<div id="sliderAff" style="width: 200px; margin-top: 4px;" ></div></div>
+		
+		<div  style="margin-top: 8px;"><label for="ach_req">Min уровень <b style=" background-color: #e6e6fa;">Карьера</b>:</label>
+		<input type="text" id="ach_req" name=ach_req class="dform" disabled size=1 style="border:0; color:#bb3902;  background-color: #e6e6fa; font-weight:bold;" />
+		<div id="sliderAch" style="width: 200px; margin-top: 4px;" ></div> </div>	
+</div>
+
+	</div>	
+			<div align=center style=" float: left; width: 570px; height: 160px;" ><textarea id="soderj" name=soderj class="dform text ui-widget-content ui-corner-all" style="width:99%;
+height: 98%; font-size:16px;"></textarea></div>	
+	<div style="clear: both;" > </div>
+	
+	
+<div class="ui-corner-all" style="margin: 10px; padding: 10px; margin-bottom: 0px; background-color: #fffacd;">
+<div style=" float: left; width: 450px; padding-left: 10px; " ><center><b>Предмет</b> труда (3 шт max): 	</center><div id="predmet">
+		<input type="checkbox" name=predmet class="dform" value=1  id="predmet1"  /><label for="predmet1">Ч-Знак</label>
+		<input type="checkbox" name=predmet class="dform" value=2 id="predmet2" /><label for="predmet2">Ч-Прир</label>
+		<input type="checkbox" name=predmet class="dform" value=3 id="predmet3" /><label for="predmet3">Ч-Техн</label>
+		<input type="checkbox" name=predmet class="dform" value=4 id="predmet4" /><label for="predmet4">Ч-Чел</label>
+		<input type="checkbox" name=predmet class="dform" value=5 id="predmet5" /><label for="predmet5">Ч-Худ.образ</label>				
+	</div>
+</div>	
+	<div style=" float: left; width: 320px;"><center><b>Цель</b> труда (2 шт max): </center><div id="cel">
+		<input type="checkbox" name=cel class="dform" value=1 id="cel1" /><label for="cel1">познававть</label>
+		<input type="checkbox" name=cel class="dform" value=2 id="cel2"  /><label for="cel2">делать</label>
+		<input type="checkbox" name=cel class="dform" value=3 id="cel3" /><label for="cel3">изобретать</label>			
+	</div>
+</div>
+	<br style="clear: both;" />
+
+<div style="padding-left: 0px; padding-top: 10px;" ><b>Способ</b> труда  (max 2 шт): 
+		<span id="sredsto">
+			<input type="checkbox" class="dform" id="sredsto1" name="sredsto" value="1" /><label for="sredsto1">ручной</label>
+			<input type="checkbox" class="dform" id="sredsto2" name="sredsto" value="2" /><label for="sredsto2">машины с руч упр</label>			
+			<input type="checkbox" class="dform" id="sredsto3" name="sredsto" value="3"  /><label for="sredsto3">автоматы и приборы</label> 	
+			<input type="checkbox" class="dform" id="sredsto4" name="sredsto" value="4"  /><label for="sredsto4">функциональный</label>
+		</span>
+</div>	
+		<div style="padding-right: 0px; padding-top: 10px;" ><b>Условия</b> труда (max 2 шт): <span id="uslovia">				<input type="checkbox" class="dform" id="uslovi1" name="uslovia"  value="1" /><label for="uslovi1">помещение</label>				<input type="checkbox" class="dform" id="uslovi2" name="uslovia" value="2" /><label for="uslovi2">откр. воздух</label>					<input type="checkbox" class="dform" id="uslovi3" name="uslovia" value="3"  /><label for="uslovi3">специфические</label> 					<input type="checkbox" class="dform" id="uslovi4" name="uslovia" value="4"  /><label for="uslovi4">мат. и морал. ответсвенные</label>
+		</span>	</div>
+</div>			
+</fieldset>
+</form></div>
